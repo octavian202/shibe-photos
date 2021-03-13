@@ -1,4 +1,4 @@
-const PHOTOS_PATH = 'photos.json'
+const PHOTOS_PATH = 'http://my-json-server.typicode.com/octavian202/photos-for-shibe/urls'
 
 const photosCountInput = document.getElementById("numberOfPhotos")
 const photosDisplay = document.getElementById("photos")
@@ -29,7 +29,6 @@ document.getElementById("photosForm").addEventListener("submit", e => {
 async function appendShibePhotos(count) {
     let response = await fetch(PHOTOS_PATH);
     let data = await response.json();
-    data = data.urls
 
     let randomIndexes = getRandomIndexes(count, data.length)
     photoUrls = randomIndexes.map(index => data[index])
