@@ -1,1 +1,2 @@
-# shibe-photos
+# Shibe Photos
+I've made a cool small website in which you can give it a number betwen 1 and 100 and it will give you that number of random shiba photos (unfortunately they're always the same 100). You can run the photos.js script to get new photos.
